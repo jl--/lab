@@ -1,0 +1,26 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "lab.jlxy.cz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jl--/lab.git"
+  },
+  "keywords": [
+    "lab"
+  ],
+  "author": "jl- <i.dragonxx@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jl--/lab/issues"
+  },
+  "homepage": "https://github.com/jl--/lab",
+  "devDependencies": {
+    "body-parser": "^1.11.0",
+    "express": "^4.11.2"
+  }
+}
