@@ -1,0 +1,1 @@
+exports.guid = require('./guid');

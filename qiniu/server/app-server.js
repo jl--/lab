@@ -3,6 +3,7 @@ var configs = require('./configs/config');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
+var utils = require('./utils');
 
 
 app.use(bodyParser.urlencoded({
@@ -20,14 +21,15 @@ app.all('*', function(req, res, next) {
 });
 
 app.get('/',function(req,res){
-  return res.status(200).send({
+  var data = {
     name: 'jl--'
-  });
+  };
+  return res.status(200).send(data);
 });
 app.post('/',function(req,res){
-  return res.status(200).send( req.body || {
-    name: 'jl'
-  });
+  var data = req.body || {};
+  data.guid = utils.guid.generate();
+  return res.status(200).send(data);
 });
 
 
