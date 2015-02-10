@@ -32,4 +32,5 @@ app.post('/',function(req,res){
 
 
 app.listen(configs.server.port, configs.server.address);
+console.log('//////////// lab.jlxycz  qiniu //////////');
 console.log(configs.server.address + ':' + configs.server.port);
