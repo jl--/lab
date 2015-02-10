@@ -1,14 +1,8 @@
 
+var configs = require('./configs/config');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-
-var config = {
-  server: {
-    port: 6003,
-    address: '127.0.0.1'
-  }
-};
 
 
 app.use(bodyParser.urlencoded({
@@ -37,5 +31,5 @@ app.post('/',function(req,res){
 });
 
 
-app.listen(config.server.port, config.server.address);
-console.log(config.server.address + ':' + config.server.port);
+app.listen(configs.server.port, configs.server.address);
+console.log(configs.server.address + ':' + configs.server.port);
